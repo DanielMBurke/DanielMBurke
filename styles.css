@@ -119,4 +119,14 @@ a:active {
         margin: auto;
         text-align:center;
     }
+    .contacts{
+                text-align: center;
+
+    }
+    .contacts > .copyright{
+        margin-top:5px;
+        text-align: center;
+    display: block;    
+    }
+    
 }
