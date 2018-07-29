@@ -22,7 +22,6 @@
     text-shadow: 
       4px 4px 0px #d5d5d5, 
         7px 7px 0px rgba(0, 0, 0, 0.2);}
-    
 .boxshadow{
   position: relative;
   border-color: #eee;
@@ -32,8 +31,24 @@
   margin: 0 0 15px -15px;
   padding: 5px 15px;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-}        
+}     
+.biocontainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 
+}
+.biocontainer > img{
+    width: 100%;
+    margin: auto;
+    border-radius:20px; 
+
+}
+.bio{text-indent: 9px;
+    margin-left: 10px;
+    font: 15px 'Lora', serif;
+
+    
+}
 .tilt{
   display:inline-block;
  
@@ -43,18 +58,11 @@
   -webkit-transform: rotate(25deg);
   transform: rotate(25deg);    
  }
-
-.intro {
+.closer{
+    font: 16x 'Lora', serif;
     text-align: center;
-    align-self: end;
-    grid-column: 1/4;
-    grid-row: 3;
 
 }
-
-
-
-
 
 /*Footer/Contactcontainers */
 
@@ -84,10 +92,4 @@ a:hover {
 
 a:active {
     color: red;
-}
-
-
-.reset{
-    margin: 0;
-  padding: 0;
 }
