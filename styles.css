@@ -34,18 +34,20 @@
 }     
 .biocontainer{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 
 }
 .biocontainer > img{
-    width: 100%;
     margin: auto;
     border-radius:20px; 
-
+  max-width:300px;
+  max-height:330x;
+  width: auto;
+  height: auto;
 }
 .bio{text-indent: 9px;
     margin-left: 10px;
-    font: 15px 'Lora', serif;
+    font: 14px 'Lora', serif;
 
     
 }
