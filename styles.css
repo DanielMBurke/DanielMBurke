@@ -2,7 +2,7 @@
     align-content: center;
      margin: auto;
     min-width: 70%;
-    max-width: 90%;
+    max-width: 90%
    
 }
 .fantasyfont {
@@ -35,8 +35,9 @@
 
 .biocontainer{
     display: grid;
-    grid-template-areas: "img bio";
-
+    grid-template-areas: "img bio"
+                        
+                        
 }
 .biocontainer > img{
     grid-area: img;
@@ -52,12 +53,16 @@
         grid-area: bio;
     margin-left: 10px;
     font: 14px 'Lora', serif;
-     max-width:300px;
+     max-width:100%;
     min-width: 150;
   max-height:330x;
     min-height: 100;}
    
  
+.basequote{
+ font: 14px 'Lora', serif;
+text-align: center;
+}
 
     
 
@@ -71,8 +76,9 @@
   transform: rotate(25deg);    
  }
 .closer{
-    font: 16x 'Lora', serif;
-    text-align: center;
+ font: 14px 'Lora', serif;
+text-align: center;
+    
 
 }
 
@@ -105,19 +111,23 @@ a:hover {
 a:active {
     color: red;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 650px) {
     /* For mobile phones: */
     .biocontainer{
+    width:100%;
     display: grid;
-    grid-template-areas: "img"                        "bio";
-    }
+    grid-template-areas: "img"
+    "bio";}
+
     .biocontainer > img{
         width:100%;
         margin-bottom: 10px;
     }
     .bio {
+        display: block;
+        padding: 0px;
         margin: auto;
-        text-align:center;
+        text-align:left;
     }
     .contacts{
                 text-align: center;
