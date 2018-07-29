@@ -53,7 +53,22 @@
     min-width: 150;
   max-height:330x;
     min-height: 100;
-
+    
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .biocontainer{
+    display: grid;
+    grid-template-areas: "img"  "bio";
+    }
+    .biocontainer > img{
+        width:75%;
+        margin-bottom: 10px;
+    }
+    .bio {
+        margin: auto;
+        text-align:center;
+    }
+}
     
 }
 .tilt{
@@ -100,18 +115,4 @@ a:hover {
 a:active {
     color: red;
 }
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .biocontainer{
-    display: grid;
-    grid-template-areas: "img"  "bio";
-    }
-    .biocontainer > img{
-        width:75%;
-        margin-bottom: 10px;
-    }
-    .bio {
-        margin: auto;
-        text-align:center;
-    }
-}
+
