@@ -8,7 +8,8 @@
 .fantasyfont {
    align-self: start;
     text-align: center;
-   font:  30px fantasy;
+   font: bold 25px 'Lora', 'san-serif';
+    color:darkslategray; 
   }
 
 .fantasyfontb{
@@ -33,11 +34,15 @@
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }     
 
+.blue{
+       background-image:url("bluegreybg.jpg");
+}
+
 .biocontainer{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "img bio"
-                        
-                        
+                         ".bio"                        
 }
 .biocontainer > img{
     grid-area: img;
@@ -52,7 +57,7 @@
 .bio{text-indent: 9px;
         grid-area: bio;
     margin-left: 10px;
-    font: 15px 'Lora', serif;
+    font:  17px 'Lora', serif;
      max-width:100%;
     min-width: 150;
   max-height:330x;
@@ -60,15 +65,14 @@
    
  
 .basequote{
- font: 14px 'Lora', serif;
+
+ font: 25px 'Anton', serif;
 text-align: center;
 }
 
     
-
 .tilt{
   display:inline-block;
- 
   -ms-transform: rotate(25deg);
   -moz-transform: rotate(25deg);
   -o-transform: rotate(45deg);
@@ -76,9 +80,9 @@ text-align: center;
   transform: rotate(25deg);    
  }
 .closer{
- font: 14px 'Lora', serif;
+ font: bold 16px 'Lora', serif;
 text-align: center;
-    
+    color: black;
 
 }
 
@@ -98,10 +102,9 @@ text-align: center;
 /*linkstyles*/
 
 a {
-    color: darkgray;
+    color: black;
     @include transform(perspective(2.5em) rotateX(15deg) scaleY(0.8));
     @include transition(all 0.5s);
-
 }
 
 a:hover {
@@ -111,11 +114,13 @@ a:hover {
 a:active {
     color: red;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 655px) {
     /* For mobile phones: */
+            
     .biocontainer{
     width:100%;
     display: grid;
+        grid-template-columns: 1fr;
     grid-template-areas: "img"
     "bio";}
 
