@@ -42,7 +42,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img bio"
-                         "boys bio"                        
+                         "tech bio"                        
 }
 .biocontainer > img{
     margin-top: 12px;
@@ -51,6 +51,7 @@
     min-width: 100;
   max-height:330x;
     min-height: 100;}
+
 .headshot{grid-area: img;
     } 
 
@@ -63,10 +64,10 @@
   max-height:330x;
     min-height: 100;}
    
-.boys{
-    
-    
+.tech{
+ grid-area: tech;
 }
+
 .basequote{
 
  font: 25px 'Anton', serif;
