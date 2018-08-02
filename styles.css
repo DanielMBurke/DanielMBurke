@@ -126,15 +126,16 @@ a:active {
     display: grid;
         grid-template-columns: 1fr;
     grid-template-areas: "img"
-    "bio";}
+                        "bio"
+                        "tech";}
 
     .biocontainer > img{
         width:100%;
         padding-top: 10px;
         margin: auto;
     }
-    .boys{
-        display: none;
+    .tech{
+        
     }
     .bio {
         display: block;
