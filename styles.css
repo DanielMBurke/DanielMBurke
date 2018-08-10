@@ -1,91 +1,100 @@
 .wrapper {
     align-content: center;
-     margin: auto;
+    margin: auto;
     min-width: 70%;
     max-width: 90%
-   
 }
+
 .fantasyfont {
-   align-self: start;
+    align-self: start;
     text-align: center;
-   font: bold 25px 'Lora', 'san-serif';
-    color:darkslategray; 
-  }
-
-.fantasyfontb{
-      align-self: start;
-    text-align: center;
-   font: bold 50px fantasy;
+    font: bold 25px 'Lora', 'san-serif';
+    color: darkslategray;
 }
 
-.shadow{         color: #343555;
+.fantasyfontb {
+    align-self: start;
+    text-align: center;
+    font: bold 50px fantasy;
+}
+
+.shadow {
+    color: #343555;
     letter-spacing: .05em;
-    text-shadow: 
-      4px 4px 0px #d5d5d5, 
-        7px 7px 0px rgba(0, 0, 0, 0.2);}
-.boxshadow{
-  position: relative;
-  border-color: #eee;
-  border-style: solid;
-  border-width: 5px 5px 5px 5px;
-  background: #fff;
-  margin: 0 0 15px -15px;
-  padding: 5px 15px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-}     
-
-.blue{
-       background-image:url("https://image.ibb.co/m1Rz1K/bluegreybg.jpg");
+    text-shadow: 4px 4px 0px #d5d5d5,
+    7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
-.biocontainer{
+.boxshadow {
+    position: relative;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    background: #fff;
+    margin: 0 0 15px -15px;
+    padding: 5px 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.blue {
+    background-image: url("https://image.ibb.co/m1Rz1K/bluegreybg.jpg");
+}
+
+.biocontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "img bio"
-                         "tech bio"                        
+    grid-template-areas: "img bio" "tech bio"
 }
-.biocontainer > img{
-    margin-top: 12px;
-    border-radius:20px; 
-  max-width:300px;
+
+.biocontainer > img {
+    margin: 10px auto;
+    border-radius: 20px;
+    max-width: 300px;
     min-width: 100;
-  max-height:330x;
-    min-height: 100;}
+    max-height: 330x;
+    min-height: 100;
+}
 
-.headshot{grid-area: img;
-    } 
+.headshot {
+    grid-area: img;
+}
 
-.bio{text-indent: 9px;
-        grid-area: bio;
+.bio {
+    text-indent: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    grid-area: bio;
     margin-left: 10px;
-    font:  19px 'Lora', serif;
-     max-width:100%;
+    font: 17px 'Lora', serif;
+    max-width: 100%;
     min-width: 150;
-  max-height:330x;
-    min-height: 100;}
-   
-.tech{
- grid-area: tech;
+    max-height: 330x;
+    min-height: 100;
 }
 
-.basequote{
-
- font: 25px 'Anton', serif;
-text-align: center;
+.tech {
+    grid-area: tech;
 }
 
-    
-.tilt{
-  display:inline-block;
-  -ms-transform: rotate(25deg);
-  -moz-transform: rotate(25deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(25deg);
-  transform: rotate(25deg);    
- }
-.closer{
- font: bold 16px 'Lora', serif;
-text-align: center;
+.basequote {
+
+    font: 25px 'Anton', serif;
+    text-align: center;
+}
+
+
+.tilt {
+    display: inline-block;
+    -ms-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+
+.closer {
+    font: bold 16px 'Lora', serif;
+    text-align: center;
     color: black;
 
 }
@@ -118,39 +127,36 @@ a:hover {
 a:active {
     color: red;
 }
+
 @media only screen and (max-width: 655px) {
     /* For mobile phones: */
-            
-    .biocontainer{
-    width:100%;
-    display: grid;
+    .biocontainer {
+        width: 100%;
+        display: grid;
         grid-template-columns: 1fr;
-    grid-template-areas: "img"
-                        "bio"
-                        "tech";}
+        grid-template-areas: "img" "bio" "tech";
+    }
 
-    .biocontainer > img{
-        width:100%;
+    .biocontainer > img {
+        width: 100%;
         padding-top: 10px;
         margin: auto;
     }
-    .tech{
-        
-    }
+    .tech {}
     .bio {
         display: block;
         padding: 0px;
         margin: auto;
-        text-align:left;
+        text-align: left;
     }
-    .contacts{
-                text-align: center;
+    .contacts {
+        text-align: center;
 
     }
-    .contacts > .copyright{
-        margin-top:5px;
+    .contacts > .copyright {
+        margin-top: 5px;
         text-align: center;
-    display: block;    
+        display: block;
     }
-    
+
 }
